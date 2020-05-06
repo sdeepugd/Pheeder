@@ -1,2 +1,2 @@
 # Pheeder
-RSS Feeds
+RSS Feeds App for IOS
