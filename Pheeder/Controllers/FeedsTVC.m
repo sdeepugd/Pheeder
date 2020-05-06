@@ -23,6 +23,7 @@
     Feed* feed = [[Feed alloc]initWithUrl:feedUrl];
     RSSParser *rssparser = [[RSSParser alloc]initWithFeed:feed];
     [rssparser populateFeed];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

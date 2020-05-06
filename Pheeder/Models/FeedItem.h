@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong,nonatomic) NSURL* itemURL;
 @property (strong,nonatomic) NSDate* publishedDate;
 @property (strong,nonatomic) NSString* content;
+@property (strong,nonatomic) NSString* breif;
 @end
 
 NS_ASSUME_NONNULL_END

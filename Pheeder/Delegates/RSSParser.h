@@ -11,9 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RSSParser : NSObject <NSXMLParserDelegate>
-@property (nonatomic, strong) NSMutableString *curElem;
+
+
 @property (nonatomic,strong) NSXMLParser *xmlparser;
 @property (nonatomic,strong) Feed* feed;
+@property (nonatomic,strong) NSString* key;
+@property (nonatomic,strong) NSString* value;
 -(instancetype)initWithFeed:(Feed*)feed;
 -(void)populateFeed;
 @end

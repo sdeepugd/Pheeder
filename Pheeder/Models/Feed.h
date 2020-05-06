@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Feed : NSObject
 @property (strong,nonatomic) NSURL* feedURL;
 @property (strong,nonatomic) NSString* title;
-@property (strong,nonatomic) NSArray* feedItems;
+@property (strong,nonatomic) NSMutableArray* feedItems;
 @property (strong,nonatomic) UIImage* blogImage;
 
 -(instancetype)initWithUrl:(NSURL*)url;

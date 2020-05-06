@@ -13,6 +13,7 @@
 - (instancetype)initWithUrl:(NSURL *)url{
     if((self = [super init])){
         [self setFeedURL:url];
+        self.feedItems = [[NSMutableArray alloc]init];
     }
     return self;
 }
