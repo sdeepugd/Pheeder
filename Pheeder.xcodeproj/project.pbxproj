@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD1D54AD24628A57000BB1AD /* FeedsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54AC24628A57000BB1AD /* FeedsTVC.m */; };
+		FD1D54B124628C19000BB1AD /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B024628C19000BB1AD /* Feed.m */; };
+		FD1D54B424628DA7000BB1AD /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B324628DA7000BB1AD /* FeedItem.m */; };
+		FD1D54B82462E45A000BB1AD /* RSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B72462E45A000BB1AD /* RSSParser.m */; };
+		FDD1E2CE24586F3B00A58B50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2CD24586F3B00A58B50 /* AppDelegate.m */; };
+		FDD1E2D124586F3B00A58B50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2D024586F3B00A58B50 /* ViewController.m */; };
+		FDD1E2D424586F3B00A58B50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD1E2D224586F3B00A58B50 /* Main.storyboard */; };
+		FDD1E2D724586F3B00A58B50 /* Pheeder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2D524586F3B00A58B50 /* Pheeder.xcdatamodeld */; };
+		FDD1E2D924586F3B00A58B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD1E2D824586F3B00A58B50 /* Assets.xcassets */; };
+		FDD1E2DC24586F3B00A58B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD1E2DA24586F3B00A58B50 /* LaunchScreen.storyboard */; };
+		FDD1E2DF24586F3C00A58B50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2DE24586F3C00A58B50 /* main.m */; };
+		FDD1E2E8245877F600A58B50 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2E7245877F600A58B50 /* BackgroundView.m */; };
+		FDD1E2ED2458819900A58B50 /* CornerSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2EC2458819900A58B50 /* CornerSettings.m */; };
+		FDD1E2F1245894AA00A58B50 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2F0245894AA00A58B50 /* ButtonView.m */; };
+		FDD1E2F42458A9B100A58B50 /* FeedListView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2F32458A9B100A58B50 /* FeedListView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD1D54AB24628A57000BB1AD /* FeedsTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedsTVC.h; sourceTree = "<group>"; };
+		FD1D54AC24628A57000BB1AD /* FeedsTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedsTVC.m; sourceTree = "<group>"; };
+		FD1D54AF24628C19000BB1AD /* Feed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		FD1D54B024628C19000BB1AD /* Feed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		FD1D54B224628DA7000BB1AD /* FeedItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedItem.h; sourceTree = "<group>"; };
+		FD1D54B324628DA7000BB1AD /* FeedItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedItem.m; sourceTree = "<group>"; };
+		FD1D54B62462E45A000BB1AD /* RSSParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSParser.h; sourceTree = "<group>"; };
+		FD1D54B72462E45A000BB1AD /* RSSParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSParser.m; sourceTree = "<group>"; };
+		FDD1E2C924586F3B00A58B50 /* Pheeder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pheeder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD1E2CC24586F3B00A58B50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDD1E2CD24586F3B00A58B50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDD1E2CF24586F3B00A58B50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FDD1E2D024586F3B00A58B50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FDD1E2D324586F3B00A58B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDD1E2D624586F3B00A58B50 /* Pheeder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pheeder.xcdatamodel; sourceTree = "<group>"; };
+		FDD1E2D824586F3B00A58B50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDD1E2DB24586F3B00A58B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDD1E2DD24586F3C00A58B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD1E2DE24586F3C00A58B50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDD1E2E6245877F600A58B50 /* BackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		FDD1E2E7245877F600A58B50 /* BackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		FDD1E2EB2458819900A58B50 /* CornerSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CornerSettings.h; sourceTree = "<group>"; };
+		FDD1E2EC2458819900A58B50 /* CornerSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CornerSettings.m; sourceTree = "<group>"; };
+		FDD1E2EF245894AA00A58B50 /* ButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
+		FDD1E2F0245894AA00A58B50 /* ButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonView.m; sourceTree = "<group>"; };
+		FDD1E2F22458A9B100A58B50 /* FeedListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedListView.h; sourceTree = "<group>"; };
+		FDD1E2F32458A9B100A58B50 /* FeedListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedListView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDD1E2C624586F3B00A58B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD1D54AA24628A26000BB1AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDD1E2CF24586F3B00A58B50 /* ViewController.h */,
+				FDD1E2D024586F3B00A58B50 /* ViewController.m */,
+				FD1D54AB24628A57000BB1AD /* FeedsTVC.h */,
+				FD1D54AC24628A57000BB1AD /* FeedsTVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FD1D54AE24628AF2000BB1AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD1D54AF24628C19000BB1AD /* Feed.h */,
+				FD1D54B024628C19000BB1AD /* Feed.m */,
+				FD1D54B224628DA7000BB1AD /* FeedItem.h */,
+				FD1D54B324628DA7000BB1AD /* FeedItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD1D54B52462E2D3000BB1AD /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FD1D54B62462E45A000BB1AD /* RSSParser.h */,
+				FD1D54B72462E45A000BB1AD /* RSSParser.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FDD1E2C024586F3B00A58B50 = {
+			isa = PBXGroup;
+			children = (
+				FDD1E2CB24586F3B00A58B50 /* Pheeder */,
+				FDD1E2CA24586F3B00A58B50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDD1E2CA24586F3B00A58B50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDD1E2C924586F3B00A58B50 /* Pheeder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDD1E2CB24586F3B00A58B50 /* Pheeder */ = {
+			isa = PBXGroup;
+			children = (
+				FD1D54B52462E2D3000BB1AD /* Delegates */,
+				FD1D54AE24628AF2000BB1AD /* Models */,
+				FD1D54AA24628A26000BB1AD /* Controllers */,
+				FDD1E2E92458808E00A58B50 /* Utils */,
+				FDD1E2E5245877D400A58B50 /* Views */,
+				FDD1E2CC24586F3B00A58B50 /* AppDelegate.h */,
+				FDD1E2CD24586F3B00A58B50 /* AppDelegate.m */,
+				FDD1E2D224586F3B00A58B50 /* Main.storyboard */,
+				FDD1E2D824586F3B00A58B50 /* Assets.xcassets */,
+				FDD1E2DA24586F3B00A58B50 /* LaunchScreen.storyboard */,
+				FDD1E2DD24586F3C00A58B50 /* Info.plist */,
+				FDD1E2DE24586F3C00A58B50 /* main.m */,
+				FDD1E2D524586F3B00A58B50 /* Pheeder.xcdatamodeld */,
+			);
+			path = Pheeder;
+			sourceTree = "<group>";
+		};
+		FDD1E2E5245877D400A58B50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDD1E2E6245877F600A58B50 /* BackgroundView.h */,
+				FDD1E2E7245877F600A58B50 /* BackgroundView.m */,
+				FDD1E2EF245894AA00A58B50 /* ButtonView.h */,
+				FDD1E2F0245894AA00A58B50 /* ButtonView.m */,
+				FDD1E2F22458A9B100A58B50 /* FeedListView.h */,
+				FDD1E2F32458A9B100A58B50 /* FeedListView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDD1E2E92458808E00A58B50 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FDD1E2EB2458819900A58B50 /* CornerSettings.h */,
+				FDD1E2EC2458819900A58B50 /* CornerSettings.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDD1E2C824586F3B00A58B50 /* Pheeder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD1E2E224586F3C00A58B50 /* Build configuration list for PBXNativeTarget "Pheeder" */;
+			buildPhases = (
+				FDD1E2C524586F3B00A58B50 /* Sources */,
+				FDD1E2C624586F3B00A58B50 /* Frameworks */,
+				FDD1E2C724586F3B00A58B50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pheeder;
+			productName = Pheeder;
+			productReference = FDD1E2C924586F3B00A58B50 /* Pheeder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDD1E2C124586F3B00A58B50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Deepak S";
+				TargetAttributes = {
+					FDD1E2C824586F3B00A58B50 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FDD1E2C424586F3B00A58B50 /* Build configuration list for PBXProject "Pheeder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDD1E2C024586F3B00A58B50;
+			productRefGroup = FDD1E2CA24586F3B00A58B50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDD1E2C824586F3B00A58B50 /* Pheeder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDD1E2C724586F3B00A58B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD1E2DC24586F3B00A58B50 /* LaunchScreen.storyboard in Resources */,
+				FDD1E2D924586F3B00A58B50 /* Assets.xcassets in Resources */,
+				FDD1E2D424586F3B00A58B50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDD1E2C524586F3B00A58B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1D54B424628DA7000BB1AD /* FeedItem.m in Sources */,
+				FDD1E2E8245877F600A58B50 /* BackgroundView.m in Sources */,
+				FDD1E2D124586F3B00A58B50 /* ViewController.m in Sources */,
+				FDD1E2CE24586F3B00A58B50 /* AppDelegate.m in Sources */,
+				FD1D54AD24628A57000BB1AD /* FeedsTVC.m in Sources */,
+				FDD1E2ED2458819900A58B50 /* CornerSettings.m in Sources */,
+				FD1D54B124628C19000BB1AD /* Feed.m in Sources */,
+				FD1D54B82462E45A000BB1AD /* RSSParser.m in Sources */,
+				FDD1E2F42458A9B100A58B50 /* FeedListView.m in Sources */,
+				FDD1E2F1245894AA00A58B50 /* ButtonView.m in Sources */,
+				FDD1E2DF24586F3C00A58B50 /* main.m in Sources */,
+				FDD1E2D724586F3B00A58B50 /* Pheeder.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FDD1E2D224586F3B00A58B50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDD1E2D324586F3B00A58B50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDD1E2DA24586F3B00A58B50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDD1E2DB24586F3B00A58B50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDD1E2E024586F3C00A58B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FDD1E2E124586F3C00A58B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDD1E2E324586F3C00A58B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44JNZJZW4B;
+				INFOPLIST_FILE = Pheeder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Deepak-Srinivasan.Pheeder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDD1E2E424586F3C00A58B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44JNZJZW4B;
+				INFOPLIST_FILE = Pheeder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Deepak-Srinivasan.Pheeder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDD1E2C424586F3B00A58B50 /* Build configuration list for PBXProject "Pheeder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD1E2E024586F3C00A58B50 /* Debug */,
+				FDD1E2E124586F3C00A58B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDD1E2E224586F3C00A58B50 /* Build configuration list for PBXNativeTarget "Pheeder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD1E2E324586F3C00A58B50 /* Debug */,
+				FDD1E2E424586F3C00A58B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FDD1E2D524586F3B00A58B50 /* Pheeder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FDD1E2D624586F3B00A58B50 /* Pheeder.xcdatamodel */,
+			);
+			currentVersion = FDD1E2D624586F3B00A58B50 /* Pheeder.xcdatamodel */;
+			path = Pheeder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FDD1E2C124586F3B00A58B50 /* Project object */;
+}
