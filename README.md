@@ -1,5 +1,5 @@
 # Pheeder
-RSS Feeds App for IOS
+RSS Feeds App for IOS (No Ads and Free!!!)
 
 ScreenShots:
 
