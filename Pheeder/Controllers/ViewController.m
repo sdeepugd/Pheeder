@@ -7,17 +7,32 @@
 //
 
 #import "ViewController.h"
+#import "MainTBC.h"
 
 @interface ViewController ()
-
+@property (strong,nonatomic) NSURL* feedUrl;
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)getFeedsButtonTapAction:(UIButton *)sender {
+    NSString* feedurlText = [self.feedurlInput.text stringByTrimmingCharactersInSet:
+    [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    if(feedurlText){
+        self.feedUrl = [NSURL URLWithString:feedurlText];
+    }
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"FeedSegue"]){
+        if([segue.destinationViewController isKindOfClass:[MainTBC class]]){
+            if(self.feedUrl){
+                MainTBC* mainTBC =(MainTBC*)segue.destinationViewController;
+                mainTBC.feedUrl =self.feedUrl;
+                NSLog(@"Feed Url: %@",mainTBC.feedUrl);
+            }
+        }
+    }
+}
 
 @end

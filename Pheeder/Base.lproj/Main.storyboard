@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,59 +20,64 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISM-0c-EOr" customClass="BackgroundView">
                                 <rect key="frame" x="20" y="20" width="374" height="696"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUv-Zh-0IV">
-                                        <rect key="frame" x="126" y="331" width="122.33333333333331" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="Bvm-rD-6U3"/>
-                                            <constraint firstAttribute="width" constant="122.33333333333331" id="KHm-EL-bRy"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhR-0y-sT2" customClass="ButtonView">
-                                        <rect key="frame" x="151.66666666666666" y="423" width="71" height="30"/>
-                                        <color key="backgroundColor" red="0.1998473734" green="0.68478858269999998" blue="0.88975458789999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="71" id="ada-bE-nE6"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="15"/>
-                                        <state key="normal" title="Login">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="p3s-uz-gbY" kind="show" id="0ZJ-Gc-nj3"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pheeder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sei-UR-QZX">
                                         <rect key="frame" x="126" y="184" width="122.33333333333331" height="28"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="28.000000000000057" id="a90-7H-5Hd"/>
+                                            <constraint firstAttribute="height" constant="28" id="wNQ-SH-6EA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <color key="textColor" red="0.19984737336238401" green="0.68478858265944853" blue="0.8897545879262353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUv-Zh-0IV">
+                                        <rect key="frame" x="19" y="294" width="336" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="GQa-mu-I0W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhV-F4-mvJ" customClass="ButtonView">
+                                        <rect key="frame" x="141" y="426" width="92" height="36"/>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="DsP-Gd-Upe"/>
+                                            <constraint firstAttribute="width" constant="92" id="gEY-zD-nMF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Get Feeds">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getFeedsButtonTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QDe-nf-3Qb"/>
+                                            <segue destination="p3s-uz-gbY" kind="show" identifier="FeedSegue" id="sBE-T7-61M"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="sei-UR-QZX" firstAttribute="centerX" secondItem="ISM-0c-EOr" secondAttribute="centerX" id="YYc-N9-xbX"/>
-                                    <constraint firstAttribute="bottom" secondItem="FhR-0y-sT2" secondAttribute="bottom" constant="243" id="lJP-Cy-0ZD"/>
-                                    <constraint firstItem="dUv-Zh-0IV" firstAttribute="centerX" secondItem="FhR-0y-sT2" secondAttribute="centerX" id="lYH-Vy-KlT"/>
-                                    <constraint firstItem="sei-UR-QZX" firstAttribute="centerX" secondItem="dUv-Zh-0IV" secondAttribute="centerX" id="nPE-ST-Hcv"/>
-                                    <constraint firstItem="FhR-0y-sT2" firstAttribute="top" secondItem="dUv-Zh-0IV" secondAttribute="bottom" constant="62" id="qMV-rY-4le"/>
-                                    <constraint firstItem="sei-UR-QZX" firstAttribute="top" secondItem="ISM-0c-EOr" secondAttribute="top" constant="183.99999999999977" id="x1k-6j-FDb"/>
+                                    <constraint firstAttribute="bottom" secondItem="uhV-F4-mvJ" secondAttribute="bottom" constant="234" id="B96-Co-Xf4"/>
+                                    <constraint firstItem="dUv-Zh-0IV" firstAttribute="leading" secondItem="ISM-0c-EOr" secondAttribute="leading" constant="19" id="MDP-jG-iRO"/>
+                                    <constraint firstItem="sei-UR-QZX" firstAttribute="centerX" secondItem="ISM-0c-EOr" secondAttribute="centerX" id="ODx-TS-Uaq"/>
+                                    <constraint firstItem="dUv-Zh-0IV" firstAttribute="centerX" secondItem="sei-UR-QZX" secondAttribute="centerX" id="QUl-Zd-NEp"/>
+                                    <constraint firstItem="sei-UR-QZX" firstAttribute="top" secondItem="ISM-0c-EOr" secondAttribute="top" constant="184" id="bxq-uw-Rbc"/>
+                                    <constraint firstItem="uhV-F4-mvJ" firstAttribute="centerX" secondItem="dUv-Zh-0IV" secondAttribute="centerX" id="ofZ-by-crP"/>
+                                    <constraint firstItem="dUv-Zh-0IV" firstAttribute="top" secondItem="sei-UR-QZX" secondAttribute="bottom" constant="82" id="psO-Pf-Mfm"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ISM-0c-EOr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2Ck-S5-21l"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ISM-0c-EOr" secondAttribute="bottom" constant="20" id="Gfh-ko-4nF"/>
-                            <constraint firstItem="ISM-0c-EOr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="T89-B7-4lM"/>
-                            <constraint firstItem="ISM-0c-EOr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iWa-09-gcA"/>
+                            <constraint firstItem="ISM-0c-EOr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8oA-Pt-PbE"/>
+                            <constraint firstItem="ISM-0c-EOr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DRo-ak-g3L"/>
+                            <constraint firstItem="ISM-0c-EOr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WOA-Ee-yEf"/>
+                            <constraint firstItem="ISM-0c-EOr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="m92-fc-0s8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="feedurlInput" destination="dUv-Zh-0IV" id="95K-U1-RX2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="628" y="297"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--MainTBC-->
         <scene sceneID="Hs3-es-gdY">
             <objects>
-                <tabBarController id="p3s-uz-gbY" sceneMemberID="viewController">
+                <tabBarController id="p3s-uz-gbY" customClass="MainTBC" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="0YY-lr-EOB"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QhH-Pm-1JM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -123,7 +129,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="BY6-d5-LIU" detailTextLabel="ubb-eP-38n" rowHeight="117" style="IBUITableViewCellStyleSubtitle" id="Pyt-vz-rfx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Feed Cell" textLabel="BY6-d5-LIU" detailTextLabel="ubb-eP-38n" rowHeight="117" style="IBUITableViewCellStyleSubtitle" id="Pyt-vz-rfx">
                                 <rect key="frame" x="0.0" y="28" width="414" height="117"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pyt-vz-rfx" id="UBu-MJ-tzf">
@@ -161,4 +167,9 @@
             <point key="canvasLocation" x="627.536231884058" y="-407.60869565217394"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.92599999904632568" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

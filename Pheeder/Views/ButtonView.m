@@ -20,6 +20,9 @@
     UIBezierPath *roundedRect = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:[cornerSettings scaledRadius]];
     [[UIColor blueColor]setStroke];
     [roundedRect stroke];
+    [[UIColor systemBlueColor]setFill];
+    [roundedRect fill];
+    [roundedRect addClip];
 }
 
 
