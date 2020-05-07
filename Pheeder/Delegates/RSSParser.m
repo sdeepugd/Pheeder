@@ -41,7 +41,6 @@
     [self.rssStack addObject:elementName];
     if([elementName isEqualToString:@"item"]){
         if(_tempFeeditem){
-            NSLog(@"adding feeds to feed list");
             [self.feed.feedItems addObject:_tempFeeditem];
         }
         _tempFeeditem = [[FeedItem alloc]init];
@@ -84,7 +83,6 @@
             self.tempFeeditem.content = self.value;
         }
     } else if([elementName isEqualToString:@"channel"]){
-        NSLog(@"adding feeds to feed list");
         [self.feed.feedItems addObject:_tempFeeditem];
     }
 }

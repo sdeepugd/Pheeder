@@ -12,6 +12,7 @@
 		FD1D54B424628DA7000BB1AD /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B324628DA7000BB1AD /* FeedItem.m */; };
 		FD1D54B82462E45A000BB1AD /* RSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B72462E45A000BB1AD /* RSSParser.m */; };
 		FD4760F42463F8A8000C59EB /* MainTBC.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4760F32463F8A8000C59EB /* MainTBC.m */; };
+		FD4760FA246434E2000C59EB /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4760F9246434E2000C59EB /* FeedViewController.m */; };
 		FDD1E2CE24586F3B00A58B50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2CD24586F3B00A58B50 /* AppDelegate.m */; };
 		FDD1E2D124586F3B00A58B50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2D024586F3B00A58B50 /* ViewController.m */; };
 		FDD1E2D424586F3B00A58B50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD1E2D224586F3B00A58B50 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 		FD1D54B72462E45A000BB1AD /* RSSParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSParser.m; sourceTree = "<group>"; };
 		FD4760F22463F8A8000C59EB /* MainTBC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTBC.h; sourceTree = "<group>"; };
 		FD4760F32463F8A8000C59EB /* MainTBC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTBC.m; sourceTree = "<group>"; };
+		FD4760F8246434E2000C59EB /* FeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		FD4760F9246434E2000C59EB /* FeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		FDD1E2C924586F3B00A58B50 /* Pheeder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pheeder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD1E2CC24586F3B00A58B50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FDD1E2CD24586F3B00A58B50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				FD1D54AC24628A57000BB1AD /* FeedsTVC.m */,
 				FD4760F22463F8A8000C59EB /* MainTBC.h */,
 				FD4760F32463F8A8000C59EB /* MainTBC.m */,
+				FD4760F8246434E2000C59EB /* FeedViewController.h */,
+				FD4760F9246434E2000C59EB /* FeedViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			files = (
 				FD1D54B424628DA7000BB1AD /* FeedItem.m in Sources */,
 				FDD1E2E8245877F600A58B50 /* BackgroundView.m in Sources */,
+				FD4760FA246434E2000C59EB /* FeedViewController.m in Sources */,
 				FDD1E2D124586F3B00A58B50 /* ViewController.m in Sources */,
 				FDD1E2CE24586F3B00A58B50 /* AppDelegate.m in Sources */,
 				FD4760F42463F8A8000C59EB /* MainTBC.m in Sources */,

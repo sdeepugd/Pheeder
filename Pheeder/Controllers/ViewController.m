@@ -29,7 +29,6 @@
             if(self.feedUrl){
                 MainTBC* mainTBC =(MainTBC*)segue.destinationViewController;
                 mainTBC.feedUrl =self.feedUrl;
-                NSLog(@"Feed Url: %@",mainTBC.feedUrl);
             }
         }
     }

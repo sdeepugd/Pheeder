@@ -11,6 +11,7 @@
 #import "RSSParser.h"
 #import "MainTBC.h"
 #import "FeedItem.h"
+#import "FeedViewController.h"
 
 @interface FeedsTVC ()
 
@@ -24,17 +25,21 @@
     if([[self parentViewController] isKindOfClass:[MainTBC class]]){
         MainTBC* parentView = (MainTBC*)[self parentViewController];
         self.feedUrl = parentView.feedUrl;
-        NSLog(@"Url is Working.. %@",self.feedUrl);
         [self fetchFeeds];
     }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSIndexPath* index = [self.tableView indexPathForCell:sender];
+    FeedItem* selectedFeedItem = (FeedItem*)[self.feeds.feedItems objectAtIndex:index.row];
     
+    if([segue.identifier isEqualToString:@"FeedItemSegue"]){
+        if([segue.destinationViewController isKindOfClass:[FeedViewController class]]){
+            FeedViewController* feedVC = (FeedViewController*)segue.destinationViewController;
+            feedVC.feed = selectedFeedItem;
+        }
+    }
     
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 -(void)fetchFeeds{
@@ -50,7 +55,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"feed counts %lu",[self.feeds.feedItems count]);
     return [self.feeds.feedItems count];
 }
 

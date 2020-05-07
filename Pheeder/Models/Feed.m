@@ -20,7 +20,6 @@
 
 - (void)downloadFeeds {
     NSData *urlData = [NSData dataWithContentsOfURL:self.feedURL];
-    NSLog(@"urldata %@",urlData);
 }
 
 @end
