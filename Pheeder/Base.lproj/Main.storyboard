@@ -53,16 +53,34 @@
                                             <segue destination="p3s-uz-gbY" kind="show" identifier="FeedSegue" id="sBE-T7-61M"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6l1-w9-bgg" customClass="ButtonView">
+                                        <rect key="frame" x="141" y="484" width="92" height="36"/>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="h1X-KI-ymT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="MS Feeds">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getFeedsButtonTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5p-NI-OF5"/>
+                                            <segue destination="p3s-uz-gbY" kind="show" identifier="MSFeedSegue" id="aka-G5-QBU"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="uhV-F4-mvJ" secondAttribute="bottom" constant="234" id="B96-Co-Xf4"/>
                                     <constraint firstItem="dUv-Zh-0IV" firstAttribute="leading" secondItem="ISM-0c-EOr" secondAttribute="leading" constant="19" id="MDP-jG-iRO"/>
                                     <constraint firstItem="sei-UR-QZX" firstAttribute="centerX" secondItem="ISM-0c-EOr" secondAttribute="centerX" id="ODx-TS-Uaq"/>
+                                    <constraint firstItem="6l1-w9-bgg" firstAttribute="trailing" secondItem="uhV-F4-mvJ" secondAttribute="trailing" id="Php-nG-mdZ"/>
                                     <constraint firstItem="dUv-Zh-0IV" firstAttribute="centerX" secondItem="sei-UR-QZX" secondAttribute="centerX" id="QUl-Zd-NEp"/>
                                     <constraint firstItem="sei-UR-QZX" firstAttribute="top" secondItem="ISM-0c-EOr" secondAttribute="top" constant="184" id="bxq-uw-Rbc"/>
+                                    <constraint firstItem="6l1-w9-bgg" firstAttribute="leading" secondItem="uhV-F4-mvJ" secondAttribute="leading" id="oJp-Va-EIc"/>
                                     <constraint firstItem="uhV-F4-mvJ" firstAttribute="centerX" secondItem="dUv-Zh-0IV" secondAttribute="centerX" id="ofZ-by-crP"/>
                                     <constraint firstItem="dUv-Zh-0IV" firstAttribute="top" secondItem="sei-UR-QZX" secondAttribute="bottom" constant="82" id="psO-Pf-Mfm"/>
+                                    <constraint firstItem="6l1-w9-bgg" firstAttribute="top" secondItem="uhV-F4-mvJ" secondAttribute="bottom" constant="22" id="vcI-2u-w8Y"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -177,8 +195,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aq2-dd-su1">
+                                <rect key="frame" x="20" y="39" width="374" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences" minimumFontSize="6"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LvE-gH-nzq">
-                                <rect key="frame" x="20" y="20" width="374" height="676"/>
+                                <rect key="frame" x="20" y="106" width="374" height="584"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -192,7 +219,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="CDM-3Y-R6Q"/>
                     <connections>
-                        <outlet property="feedWebView" destination="LvE-gH-nzq" id="jDG-tu-xOR"/>
+                        <outlet property="feedTitleWebView" destination="aq2-dd-su1" id="DFE-04-6Ga"/>
+                        <outlet property="feedWebView" destination="LvE-gH-nzq" id="u4n-m5-elR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIs-iz-nCU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -205,4 +233,7 @@
             <color red="0.92599999904632568" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="aka-G5-QBU"/>
+    </inferredMetricsTieBreakers>
 </document>

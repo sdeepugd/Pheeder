@@ -12,8 +12,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FeedViewController : UIViewController
-@property (strong,nonatomic) FeedItem* feed;
+@property (weak, nonatomic) IBOutlet WKWebView *feedTitleWebView;
 @property (weak, nonatomic) IBOutlet WKWebView *feedWebView;
+@property (strong,nonatomic) FeedItem* feed;
 @end
 
 NS_ASSUME_NONNULL_END
