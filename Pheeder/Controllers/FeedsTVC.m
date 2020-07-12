@@ -39,7 +39,10 @@
             feedVC.feed = selectedFeedItem;
         }
     }
-    
+}
+- (IBAction)refresh:(id)sender {
+    [self.refreshControl beginRefreshing];
+    [self.refreshControl endRefreshing];
 }
 
 -(void)fetchFeeds{

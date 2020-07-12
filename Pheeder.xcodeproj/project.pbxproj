@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00134CE624BBA731000D465E /* AddFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00134CE524BBA731000D465E /* AddFeedViewController.m */; };
 		FD1D54AD24628A57000BB1AD /* FeedsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54AC24628A57000BB1AD /* FeedsTVC.m */; };
 		FD1D54B124628C19000BB1AD /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B024628C19000BB1AD /* Feed.m */; };
 		FD1D54B424628DA7000BB1AD /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B324628DA7000BB1AD /* FeedItem.m */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00134CE424BBA731000D465E /* AddFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddFeedViewController.h; sourceTree = "<group>"; };
+		00134CE524BBA731000D465E /* AddFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddFeedViewController.m; sourceTree = "<group>"; };
 		FD1D54AB24628A57000BB1AD /* FeedsTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedsTVC.h; sourceTree = "<group>"; };
 		FD1D54AC24628A57000BB1AD /* FeedsTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedsTVC.m; sourceTree = "<group>"; };
 		FD1D54AF24628C19000BB1AD /* Feed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 				FD4760F32463F8A8000C59EB /* MainTBC.m */,
 				FD4760F8246434E2000C59EB /* FeedViewController.h */,
 				FD4760F9246434E2000C59EB /* FeedViewController.m */,
+				00134CE424BBA731000D465E /* AddFeedViewController.h */,
+				00134CE524BBA731000D465E /* AddFeedViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				FD1D54B424628DA7000BB1AD /* FeedItem.m in Sources */,
 				FDD1E2E8245877F600A58B50 /* BackgroundView.m in Sources */,
 				FD4760FA246434E2000C59EB /* FeedViewController.m in Sources */,
+				00134CE624BBA731000D465E /* AddFeedViewController.m in Sources */,
 				FDD1E2D124586F3B00A58B50 /* ViewController.m in Sources */,
 				FDD1E2CE24586F3B00A58B50 /* AppDelegate.m in Sources */,
 				FD4760F42463F8A8000C59EB /* MainTBC.m in Sources */,
