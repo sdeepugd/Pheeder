@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		00134CE624BBA731000D465E /* AddFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00134CE524BBA731000D465E /* AddFeedViewController.m */; };
+		001D464024BC1BA000AF3CB4 /* PheederDBModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 001D463E24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodeld */; };
+		00DC6DBF24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DC6DBB24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataClass.swift */; };
+		00DC6DC024BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DC6DBC24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataProperties.swift */; };
+		00DC6DC124BC1E5B003C28A4 /* DBFeedItems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DC6DBD24BC1E5B003C28A4 /* DBFeedItems+CoreDataClass.swift */; };
+		00DC6DC224BC1E5B003C28A4 /* DBFeedItems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DC6DBE24BC1E5B003C28A4 /* DBFeedItems+CoreDataProperties.swift */; };
 		FD1D54AD24628A57000BB1AD /* FeedsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54AC24628A57000BB1AD /* FeedsTVC.m */; };
 		FD1D54B124628C19000BB1AD /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B024628C19000BB1AD /* Feed.m */; };
 		FD1D54B424628DA7000BB1AD /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B324628DA7000BB1AD /* FeedItem.m */; };
@@ -17,7 +22,6 @@
 		FDD1E2CE24586F3B00A58B50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2CD24586F3B00A58B50 /* AppDelegate.m */; };
 		FDD1E2D124586F3B00A58B50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2D024586F3B00A58B50 /* ViewController.m */; };
 		FDD1E2D424586F3B00A58B50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD1E2D224586F3B00A58B50 /* Main.storyboard */; };
-		FDD1E2D724586F3B00A58B50 /* Pheeder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2D524586F3B00A58B50 /* Pheeder.xcdatamodeld */; };
 		FDD1E2D924586F3B00A58B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD1E2D824586F3B00A58B50 /* Assets.xcassets */; };
 		FDD1E2DC24586F3B00A58B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD1E2DA24586F3B00A58B50 /* LaunchScreen.storyboard */; };
 		FDD1E2DF24586F3C00A58B50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2DE24586F3C00A58B50 /* main.m */; };
@@ -30,6 +34,11 @@
 /* Begin PBXFileReference section */
 		00134CE424BBA731000D465E /* AddFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddFeedViewController.h; sourceTree = "<group>"; };
 		00134CE524BBA731000D465E /* AddFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddFeedViewController.m; sourceTree = "<group>"; };
+		001D463F24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PheederDBModel.xcdatamodel; sourceTree = "<group>"; };
+		00DC6DBB24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBFeedSubscriptions+CoreDataClass.swift"; sourceTree = "<group>"; };
+		00DC6DBC24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBFeedSubscriptions+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		00DC6DBD24BC1E5B003C28A4 /* DBFeedItems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBFeedItems+CoreDataClass.swift"; sourceTree = "<group>"; };
+		00DC6DBE24BC1E5B003C28A4 /* DBFeedItems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBFeedItems+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FD1D54AB24628A57000BB1AD /* FeedsTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedsTVC.h; sourceTree = "<group>"; };
 		FD1D54AC24628A57000BB1AD /* FeedsTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedsTVC.m; sourceTree = "<group>"; };
 		FD1D54AF24628C19000BB1AD /* Feed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
@@ -48,7 +57,6 @@
 		FDD1E2CF24586F3B00A58B50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FDD1E2D024586F3B00A58B50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FDD1E2D324586F3B00A58B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FDD1E2D624586F3B00A58B50 /* Pheeder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pheeder.xcdatamodel; sourceTree = "<group>"; };
 		FDD1E2D824586F3B00A58B50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD1E2DB24586F3B00A58B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDD1E2DD24586F3C00A58B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +82,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00DC6DB224BC1DED003C28A4 /* dbModel */ = {
+			isa = PBXGroup;
+			children = (
+				00DC6DBB24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataClass.swift */,
+				00DC6DBC24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataProperties.swift */,
+				00DC6DBD24BC1E5B003C28A4 /* DBFeedItems+CoreDataClass.swift */,
+				00DC6DBE24BC1E5B003C28A4 /* DBFeedItems+CoreDataProperties.swift */,
+			);
+			path = dbModel;
+			sourceTree = "<group>";
+		};
 		FD1D54AA24628A26000BB1AD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +113,7 @@
 		FD1D54AE24628AF2000BB1AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				00DC6DB224BC1DED003C28A4 /* dbModel */,
 				FD1D54AF24628C19000BB1AD /* Feed.h */,
 				FD1D54B024628C19000BB1AD /* Feed.m */,
 				FD1D54B224628DA7000BB1AD /* FeedItem.h */,
@@ -114,6 +134,7 @@
 		FDD1E2C024586F3B00A58B50 = {
 			isa = PBXGroup;
 			children = (
+				001D463E24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodeld */,
 				FDD1E2CB24586F3B00A58B50 /* Pheeder */,
 				FDD1E2CA24586F3B00A58B50 /* Products */,
 			);
@@ -142,7 +163,6 @@
 				FDD1E2DA24586F3B00A58B50 /* LaunchScreen.storyboard */,
 				FDD1E2DD24586F3C00A58B50 /* Info.plist */,
 				FDD1E2DE24586F3C00A58B50 /* main.m */,
-				FDD1E2D524586F3B00A58B50 /* Pheeder.xcdatamodeld */,
 			);
 			path = Pheeder;
 			sourceTree = "<group>";
@@ -200,6 +220,7 @@
 				TargetAttributes = {
 					FDD1E2C824586F3B00A58B50 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -242,18 +263,22 @@
 				FD1D54B424628DA7000BB1AD /* FeedItem.m in Sources */,
 				FDD1E2E8245877F600A58B50 /* BackgroundView.m in Sources */,
 				FD4760FA246434E2000C59EB /* FeedViewController.m in Sources */,
+				00DC6DC224BC1E5B003C28A4 /* DBFeedItems+CoreDataProperties.swift in Sources */,
 				00134CE624BBA731000D465E /* AddFeedViewController.m in Sources */,
 				FDD1E2D124586F3B00A58B50 /* ViewController.m in Sources */,
 				FDD1E2CE24586F3B00A58B50 /* AppDelegate.m in Sources */,
 				FD4760F42463F8A8000C59EB /* MainTBC.m in Sources */,
+				00DC6DC024BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataProperties.swift in Sources */,
+				001D464024BC1BA000AF3CB4 /* PheederDBModel.xcdatamodeld in Sources */,
+				00DC6DBF24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataClass.swift in Sources */,
 				FD1D54AD24628A57000BB1AD /* FeedsTVC.m in Sources */,
 				FDD1E2ED2458819900A58B50 /* CornerSettings.m in Sources */,
+				00DC6DC124BC1E5B003C28A4 /* DBFeedItems+CoreDataClass.swift in Sources */,
 				FD1D54B124628C19000BB1AD /* Feed.m in Sources */,
 				FD1D54B82462E45A000BB1AD /* RSSParser.m in Sources */,
 				FDD1E2F42458A9B100A58B50 /* FeedListView.m in Sources */,
 				FDD1E2F1245894AA00A58B50 /* ButtonView.m in Sources */,
 				FDD1E2DF24586F3C00A58B50 /* main.m in Sources */,
-				FDD1E2D724586F3B00A58B50 /* Pheeder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44JNZJZW4B;
 				INFOPLIST_FILE = Pheeder/Info.plist;
@@ -404,6 +430,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Deepak-Srinivasan.Pheeder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pheeder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -412,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44JNZJZW4B;
 				INFOPLIST_FILE = Pheeder/Info.plist;
@@ -421,6 +451,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Deepak-Srinivasan.Pheeder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pheeder-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -449,13 +481,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FDD1E2D524586F3B00A58B50 /* Pheeder.xcdatamodeld */ = {
+		001D463E24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FDD1E2D624586F3B00A58B50 /* Pheeder.xcdatamodel */,
+				001D463F24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodel */,
 			);
-			currentVersion = FDD1E2D624586F3B00A58B50 /* Pheeder.xcdatamodel */;
-			path = Pheeder.xcdatamodeld;
+			currentVersion = 001D463F24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodel */;
+			name = PheederDBModel.xcdatamodeld;
+			path = Pheeder/Models/PheederDBModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

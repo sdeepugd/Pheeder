@@ -9,7 +9,8 @@
 #import "AddFeedViewController.h"
 
 @interface AddFeedViewController ()
-@property (nonatomic, weak) IBOutlet UIView *feedInputView;
+@property (weak, nonatomic) IBOutlet UITextField *addFeedTextField;
+
 @end
 
 @implementation AddFeedViewController
@@ -19,7 +20,7 @@
     // Do any additional setup after loading the view.
 }
 - (IBAction)tapOnSearch:(id)sender {
-//    NSString *searchString =
+//    NSString *searchString = textField
 }
 - (IBAction)tapOnAdd:(id)sender {
     
@@ -35,6 +36,4 @@
 }
 */
 
-- (IBAction)feedTextField:(id)sender {
-}
 @end
