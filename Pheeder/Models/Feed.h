@@ -8,14 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "FeedItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Feed : NSObject
 @property (strong,nonatomic) NSURL* feedURL;
 @property (strong,nonatomic) NSString* title;
-@property (strong,nonatomic) NSMutableArray* feedItems;
+@property (strong,nonatomic) NSString* feedID;
+@property (strong,nonatomic) NSArray<NSString*>* topics;
+@property (strong,nonatomic) NSString* feedDescription;
+@property (strong,nonatomic) NSMutableArray<FeedItem*>* feedItems;
 @property (strong,nonatomic) UIImage* blogImage;
+
 
 -(instancetype)initWithUrl:(NSURL*)url;
 -(void)downloadFeeds;

@@ -18,9 +18,9 @@
     CornerSettings *cornerSettings = [[CornerSettings alloc]initWithBounds:self.bounds];
     cornerSettings.radius = 40.0;
     UIBezierPath *roundedRect = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:[cornerSettings scaledRadius]];
-    [[UIColor blueColor]setStroke];
+    [[UIColor colorNamed:@"EnterButton"]setStroke];
     [roundedRect stroke];
-    [[UIColor systemBlueColor]setFill];
+    [[UIColor colorNamed:@"EnterButton"]setFill];
     [roundedRect fill];
     [roundedRect addClip];
 }

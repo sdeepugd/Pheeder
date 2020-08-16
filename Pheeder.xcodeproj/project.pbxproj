@@ -3,16 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		00134CE624BBA731000D465E /* AddFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00134CE524BBA731000D465E /* AddFeedViewController.m */; };
-		001D464024BC1BA000AF3CB4 /* PheederDBModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 001D463E24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodeld */; };
-		00DC6DBF24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DC6DBB24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataClass.swift */; };
-		00DC6DC024BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DC6DBC24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataProperties.swift */; };
-		00DC6DC124BC1E5B003C28A4 /* DBFeedItems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DC6DBD24BC1E5B003C28A4 /* DBFeedItems+CoreDataClass.swift */; };
-		00DC6DC224BC1E5B003C28A4 /* DBFeedItems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DC6DBE24BC1E5B003C28A4 /* DBFeedItems+CoreDataProperties.swift */; };
+		558B667324E7DC6E00C27846 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 558B667224E7DC6E00C27846 /* libsqlite3.tbd */; };
+		559092D624DF18DE0055CC8A /* URLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 559092D524DF18DE0055CC8A /* URLUtils.m */; };
+		559092D924DF1AEC0055CC8A /* FeedUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 559092D824DF1AEC0055CC8A /* FeedUtils.m */; };
+		559092DF24DFFE5A0055CC8A /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 559092DE24DFFE5A0055CC8A /* ImageUtils.m */; };
+		559092E524E00B300055CC8A /* AddFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 559092E424E00B300055CC8A /* AddFeedTableViewCell.m */; };
+		559092ED24E047340055CC8A /* addFeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559092EC24E047340055CC8A /* addFeedTest.swift */; };
+		5590930A24E073300055CC8A /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5590930924E073300055CC8A /* DBManager.m */; };
+		55E514E724E863D20093D345 /* SubscribedFeedsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E514E624E863D20093D345 /* SubscribedFeedsTableViewController.m */; };
+		55E514EA24E945B70093D345 /* SubscribedFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E514E924E945B70093D345 /* SubscribedFeedTableViewCell.m */; };
+		606857FBE8374945397A8F2D /* Pods_Pheeder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969564DF35E51EE1EBB81886 /* Pods_Pheeder.framework */; };
 		FD1D54AD24628A57000BB1AD /* FeedsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54AC24628A57000BB1AD /* FeedsTVC.m */; };
 		FD1D54B124628C19000BB1AD /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B024628C19000BB1AD /* Feed.m */; };
 		FD1D54B424628DA7000BB1AD /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1D54B324628DA7000BB1AD /* FeedItem.m */; };
@@ -31,14 +36,40 @@
 		FDD1E2F42458A9B100A58B50 /* FeedListView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1E2F32458A9B100A58B50 /* FeedListView.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		559092EF24E047340055CC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDD1E2C124586F3B00A58B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDD1E2C824586F3B00A58B50;
+			remoteInfo = Pheeder;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		00134CE424BBA731000D465E /* AddFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddFeedViewController.h; sourceTree = "<group>"; };
 		00134CE524BBA731000D465E /* AddFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddFeedViewController.m; sourceTree = "<group>"; };
-		001D463F24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PheederDBModel.xcdatamodel; sourceTree = "<group>"; };
-		00DC6DBB24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBFeedSubscriptions+CoreDataClass.swift"; sourceTree = "<group>"; };
-		00DC6DBC24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBFeedSubscriptions+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		00DC6DBD24BC1E5B003C28A4 /* DBFeedItems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBFeedItems+CoreDataClass.swift"; sourceTree = "<group>"; };
-		00DC6DBE24BC1E5B003C28A4 /* DBFeedItems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBFeedItems+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		474639522A2D38E43B5709C4 /* Pods-Pheeder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pheeder.debug.xcconfig"; path = "Target Support Files/Pods-Pheeder/Pods-Pheeder.debug.xcconfig"; sourceTree = "<group>"; };
+		558B667224E7DC6E00C27846 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		559092D424DF18DE0055CC8A /* URLUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLUtils.h; sourceTree = "<group>"; };
+		559092D524DF18DE0055CC8A /* URLUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLUtils.m; sourceTree = "<group>"; };
+		559092D724DF1AEC0055CC8A /* FeedUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedUtils.h; sourceTree = "<group>"; };
+		559092D824DF1AEC0055CC8A /* FeedUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedUtils.m; sourceTree = "<group>"; };
+		559092DD24DFFE5A0055CC8A /* ImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		559092DE24DFFE5A0055CC8A /* ImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		559092E324E00B300055CC8A /* AddFeedTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddFeedTableViewCell.h; sourceTree = "<group>"; };
+		559092E424E00B300055CC8A /* AddFeedTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddFeedTableViewCell.m; sourceTree = "<group>"; };
+		559092EA24E047330055CC8A /* addFeedTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = addFeedTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		559092EC24E047340055CC8A /* addFeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFeedTest.swift; sourceTree = "<group>"; };
+		559092EE24E047340055CC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5590930824E073300055CC8A /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		5590930924E073300055CC8A /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		55E514E524E863D20093D345 /* SubscribedFeedsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscribedFeedsTableViewController.h; sourceTree = "<group>"; };
+		55E514E624E863D20093D345 /* SubscribedFeedsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscribedFeedsTableViewController.m; sourceTree = "<group>"; };
+		55E514E824E945B70093D345 /* SubscribedFeedTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscribedFeedTableViewCell.h; sourceTree = "<group>"; };
+		55E514E924E945B70093D345 /* SubscribedFeedTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscribedFeedTableViewCell.m; sourceTree = "<group>"; };
+		969564DF35E51EE1EBB81886 /* Pods_Pheeder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pheeder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C5B081066C052EC3B8185E /* Pods-Pheeder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pheeder.release.xcconfig"; path = "Target Support Files/Pods-Pheeder/Pods-Pheeder.release.xcconfig"; sourceTree = "<group>"; };
 		FD1D54AB24628A57000BB1AD /* FeedsTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedsTVC.h; sourceTree = "<group>"; };
 		FD1D54AC24628A57000BB1AD /* FeedsTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedsTVC.m; sourceTree = "<group>"; };
 		FD1D54AF24628C19000BB1AD /* Feed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
@@ -72,25 +103,50 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FDD1E2C624586F3B00A58B50 /* Frameworks */ = {
+		559092E724E047330055CC8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDD1E2C624586F3B00A58B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558B667324E7DC6E00C27846 /* libsqlite3.tbd in Frameworks */,
+				606857FBE8374945397A8F2D /* Pods_Pheeder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00DC6DB224BC1DED003C28A4 /* dbModel */ = {
+		39DDAC3182C2C54131DCDC81 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				00DC6DBB24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataClass.swift */,
-				00DC6DBC24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataProperties.swift */,
-				00DC6DBD24BC1E5B003C28A4 /* DBFeedItems+CoreDataClass.swift */,
-				00DC6DBE24BC1E5B003C28A4 /* DBFeedItems+CoreDataProperties.swift */,
+				474639522A2D38E43B5709C4 /* Pods-Pheeder.debug.xcconfig */,
+				A9C5B081066C052EC3B8185E /* Pods-Pheeder.release.xcconfig */,
 			);
-			path = dbModel;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		558B667124E7DC6E00C27846 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				558B667224E7DC6E00C27846 /* libsqlite3.tbd */,
+				969564DF35E51EE1EBB81886 /* Pods_Pheeder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		559092EB24E047340055CC8A /* addFeedTest */ = {
+			isa = PBXGroup;
+			children = (
+				559092EC24E047340055CC8A /* addFeedTest.swift */,
+				559092EE24E047340055CC8A /* Info.plist */,
+			);
+			path = addFeedTest;
 			sourceTree = "<group>";
 		};
 		FD1D54AA24628A26000BB1AD /* Controllers */ = {
@@ -106,6 +162,10 @@
 				FD4760F9246434E2000C59EB /* FeedViewController.m */,
 				00134CE424BBA731000D465E /* AddFeedViewController.h */,
 				00134CE524BBA731000D465E /* AddFeedViewController.m */,
+				5590930824E073300055CC8A /* DBManager.h */,
+				5590930924E073300055CC8A /* DBManager.m */,
+				55E514E524E863D20093D345 /* SubscribedFeedsTableViewController.h */,
+				55E514E624E863D20093D345 /* SubscribedFeedsTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,7 +173,6 @@
 		FD1D54AE24628AF2000BB1AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				00DC6DB224BC1DED003C28A4 /* dbModel */,
 				FD1D54AF24628C19000BB1AD /* Feed.h */,
 				FD1D54B024628C19000BB1AD /* Feed.m */,
 				FD1D54B224628DA7000BB1AD /* FeedItem.h */,
@@ -134,9 +193,11 @@
 		FDD1E2C024586F3B00A58B50 = {
 			isa = PBXGroup;
 			children = (
-				001D463E24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodeld */,
 				FDD1E2CB24586F3B00A58B50 /* Pheeder */,
+				559092EB24E047340055CC8A /* addFeedTest */,
 				FDD1E2CA24586F3B00A58B50 /* Products */,
+				558B667124E7DC6E00C27846 /* Frameworks */,
+				39DDAC3182C2C54131DCDC81 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				FDD1E2C924586F3B00A58B50 /* Pheeder.app */,
+				559092EA24E047330055CC8A /* addFeedTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +238,10 @@
 				FDD1E2F0245894AA00A58B50 /* ButtonView.m */,
 				FDD1E2F22458A9B100A58B50 /* FeedListView.h */,
 				FDD1E2F32458A9B100A58B50 /* FeedListView.m */,
+				559092E324E00B300055CC8A /* AddFeedTableViewCell.h */,
+				559092E424E00B300055CC8A /* AddFeedTableViewCell.m */,
+				55E514E824E945B70093D345 /* SubscribedFeedTableViewCell.h */,
+				55E514E924E945B70093D345 /* SubscribedFeedTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +251,12 @@
 			children = (
 				FDD1E2EB2458819900A58B50 /* CornerSettings.h */,
 				FDD1E2EC2458819900A58B50 /* CornerSettings.m */,
+				559092D424DF18DE0055CC8A /* URLUtils.h */,
+				559092D524DF18DE0055CC8A /* URLUtils.m */,
+				559092D724DF1AEC0055CC8A /* FeedUtils.h */,
+				559092D824DF1AEC0055CC8A /* FeedUtils.m */,
+				559092DD24DFFE5A0055CC8A /* ImageUtils.h */,
+				559092DE24DFFE5A0055CC8A /* ImageUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -192,13 +264,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		559092E924E047330055CC8A /* addFeedTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559092F124E047340055CC8A /* Build configuration list for PBXNativeTarget "addFeedTest" */;
+			buildPhases = (
+				559092E624E047330055CC8A /* Sources */,
+				559092E724E047330055CC8A /* Frameworks */,
+				559092E824E047330055CC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559092F024E047340055CC8A /* PBXTargetDependency */,
+			);
+			name = addFeedTest;
+			productName = addFeedTest;
+			productReference = 559092EA24E047330055CC8A /* addFeedTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		FDD1E2C824586F3B00A58B50 /* Pheeder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDD1E2E224586F3C00A58B50 /* Build configuration list for PBXNativeTarget "Pheeder" */;
 			buildPhases = (
+				AEF764830F5C72D42F6E8C8A /* [CP] Check Pods Manifest.lock */,
 				FDD1E2C524586F3B00A58B50 /* Sources */,
 				FDD1E2C624586F3B00A58B50 /* Frameworks */,
 				FDD1E2C724586F3B00A58B50 /* Resources */,
+				6EF3C877D21E178871E71E16 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,9 +307,14 @@
 		FDD1E2C124586F3B00A58B50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Deepak S";
 				TargetAttributes = {
+					559092E924E047330055CC8A = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FDD1E2C824586F3B00A58B50;
+					};
 					FDD1E2C824586F3B00A58B50 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1150;
@@ -238,11 +335,19 @@
 			projectRoot = "";
 			targets = (
 				FDD1E2C824586F3B00A58B50 /* Pheeder */,
+				559092E924E047330055CC8A /* addFeedTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		559092E824E047330055CC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDD1E2C724586F3B00A58B50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,34 +360,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6EF3C877D21E178871E71E16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pheeder/Pods-Pheeder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pheeder/Pods-Pheeder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pheeder/Pods-Pheeder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEF764830F5C72D42F6E8C8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pheeder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		559092E624E047330055CC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559092ED24E047340055CC8A /* addFeedTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDD1E2C524586F3B00A58B50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559092E524E00B300055CC8A /* AddFeedTableViewCell.m in Sources */,
 				FD1D54B424628DA7000BB1AD /* FeedItem.m in Sources */,
 				FDD1E2E8245877F600A58B50 /* BackgroundView.m in Sources */,
 				FD4760FA246434E2000C59EB /* FeedViewController.m in Sources */,
-				00DC6DC224BC1E5B003C28A4 /* DBFeedItems+CoreDataProperties.swift in Sources */,
 				00134CE624BBA731000D465E /* AddFeedViewController.m in Sources */,
+				559092DF24DFFE5A0055CC8A /* ImageUtils.m in Sources */,
+				559092D624DF18DE0055CC8A /* URLUtils.m in Sources */,
 				FDD1E2D124586F3B00A58B50 /* ViewController.m in Sources */,
 				FDD1E2CE24586F3B00A58B50 /* AppDelegate.m in Sources */,
 				FD4760F42463F8A8000C59EB /* MainTBC.m in Sources */,
-				00DC6DC024BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataProperties.swift in Sources */,
-				001D464024BC1BA000AF3CB4 /* PheederDBModel.xcdatamodeld in Sources */,
-				00DC6DBF24BC1E5B003C28A4 /* DBFeedSubscriptions+CoreDataClass.swift in Sources */,
+				559092D924DF1AEC0055CC8A /* FeedUtils.m in Sources */,
+				55E514EA24E945B70093D345 /* SubscribedFeedTableViewCell.m in Sources */,
 				FD1D54AD24628A57000BB1AD /* FeedsTVC.m in Sources */,
+				5590930A24E073300055CC8A /* DBManager.m in Sources */,
 				FDD1E2ED2458819900A58B50 /* CornerSettings.m in Sources */,
-				00DC6DC124BC1E5B003C28A4 /* DBFeedItems+CoreDataClass.swift in Sources */,
 				FD1D54B124628C19000BB1AD /* Feed.m in Sources */,
 				FD1D54B82462E45A000BB1AD /* RSSParser.m in Sources */,
 				FDD1E2F42458A9B100A58B50 /* FeedListView.m in Sources */,
 				FDD1E2F1245894AA00A58B50 /* ButtonView.m in Sources */,
 				FDD1E2DF24586F3C00A58B50 /* main.m in Sources */,
+				55E514E724E863D20093D345 /* SubscribedFeedsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		559092F024E047340055CC8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDD1E2C824586F3B00A58B50 /* Pheeder */;
+			targetProxy = 559092EF24E047340055CC8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FDD1E2D224586F3B00A58B50 /* Main.storyboard */ = {
@@ -304,6 +469,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		559092F224E047340055CC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44JNZJZW4B;
+				INFOPLIST_FILE = addFeedTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deepak.addFeedTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pheeder;
+			};
+			name = Debug;
+		};
+		559092F324E047340055CC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44JNZJZW4B;
+				INFOPLIST_FILE = addFeedTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deepak.addFeedTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pheeder;
+			};
+			name = Release;
+		};
 		FDD1E2E024586F3C00A58B50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -418,6 +627,7 @@
 		};
 		FDD1E2E324586F3C00A58B50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474639522A2D38E43B5709C4 /* Pods-Pheeder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -439,6 +649,7 @@
 		};
 		FDD1E2E424586F3C00A58B50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C5B081066C052EC3B8185E /* Pods-Pheeder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -460,6 +671,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		559092F124E047340055CC8A /* Build configuration list for PBXNativeTarget "addFeedTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559092F224E047340055CC8A /* Debug */,
+				559092F324E047340055CC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FDD1E2C424586F3B00A58B50 /* Build configuration list for PBXProject "Pheeder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -479,20 +699,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		001D463E24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				001D463F24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodel */,
-			);
-			currentVersion = 001D463F24BC1BA000AF3CB4 /* PheederDBModel.xcdatamodel */;
-			name = PheederDBModel.xcdatamodeld;
-			path = Pheeder/Models/PheederDBModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FDD1E2C124586F3B00A58B50 /* Project object */;
 }
